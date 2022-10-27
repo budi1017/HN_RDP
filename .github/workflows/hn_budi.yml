@@ -15,12 +15,11 @@ jobs:
     - name: Download Ngrok.
 
       run: |
-        Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/Zakybotz/Rdp-Free/master/start.bat -OutFile start.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/Zakybotz/Rdp-Free/master/wallpaper.bat -OutFile wallpaper.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/Zakybotz/Rdp-Free/master/loop.bat -OutFile loop.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/Zakybotz/Rdp-Free/master/start.bat -OutFile push.bat
-    - name: Extract Ngrok File.
+       Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
+        Invoke-WebRequest https://raw.githubusercontent.com/testhere1122/netslutter-RDP-1/master/start.bat -OutFile start.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/testhere1122/netslutter-RDP-1/master/wallpaper.png -OutFile wallpaper.png
+        Invoke-WebRequest https://raw.githubusercontent.com/testhere1122/netslutter-RDP-1/master/wallpaper.bat -OutFile wallpaper.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/testhere1122/netslutter-RDP-1/master/loop.bat -OutFile loop.bat    - name: Extract Ngrok File.
 
       run: Expand-Archive ngrok.zip
 
